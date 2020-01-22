@@ -10,7 +10,9 @@ NMF approximates a matrix 'R' with a low-rank matrix approximation such that,
 
 **R = B.C**
 
-**(n*m) = (n*d).(d*m)**
+**(nxm) = (nxd).(dxm)**
+
+d = No. of dimensions
     
 where, R = orginal matrix [ratings matrix (or) any sparse matrix]
 
@@ -27,5 +29,7 @@ steps:
       **B = B-d(Loss)/dB = B-(B.C.C' - R.C')**
       
       **C = C-d(Loss)/dC = C-(B'.B.C - B'.R)**
+      
+We can use more hyper-parameters like max_iter , learning_rate, etc.
    
    
